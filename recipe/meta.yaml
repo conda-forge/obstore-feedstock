@@ -12,7 +12,7 @@ build:
   script:
     - {{ PYTHON }} -m pip install ./obstore -vv
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-  number: 0
+  number: 1
 
 requirements:
   build:
