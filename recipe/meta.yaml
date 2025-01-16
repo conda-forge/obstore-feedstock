@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: obstore
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/developmentseed/obstore/archive/refs/tags/py-v{{ version }}.tar.gz
-  sha256: e9777498aee1cea8f7b7c4e39f592c40256824646408bd60710cc34be9df5ed1
+  sha256: 079bd116d9b822a1f28927cffa1af2f61c903c7926fe73005396c2db06bc3570
 
 build:
   script:
     - {{ PYTHON }} -m pip install ./obstore -vv
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-  number: 1
+  number: 0
 
 requirements:
   build:
