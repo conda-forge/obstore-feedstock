@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: obstore
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/developmentseed/obstore/archive/refs/tags/py-v{{ version }}.tar.gz
-  sha256: aa48c843e8359bfc04137be8468290273a72d47056827ce14070b9e11020045a
+  sha256: 12263806f71963fa0aacb032a47a27e85556edc347a74140b0495b8d7d1705fc
 
 build:
   script:
@@ -31,6 +31,7 @@ requirements:
     - pip
   run:
     - python
+    - typing_extensions >=4.0.0  # [py<312]
 
 test:
   imports:
