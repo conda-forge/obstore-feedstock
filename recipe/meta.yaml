@@ -31,7 +31,7 @@ requirements:
     - pip
   run:
     - python
-    - typing_extensions>=4.0.0  # [py<312]
+    - typing_extensions >=4.0.0  # [py<312]
 
 test:
   imports:
