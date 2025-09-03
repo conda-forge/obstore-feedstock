@@ -9,6 +9,8 @@ source:
   sha256: 9f500a839f4599d13b48535ddc49282c8994ebb1b4fc04fc9940dc521faa75f6
 
 build:
+  # Build issue https://github.com/conda-forge/obstore-feedstock/pull/21
+  skip: true  # [py==3.14 and (aarch64 or ppc64le)]
   script:
     - {{ PYTHON }} -m pip install ./obstore -vv
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
