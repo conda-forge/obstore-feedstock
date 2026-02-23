@@ -10,7 +10,7 @@ source:
 
 build:
   # Build issue https://github.com/conda-forge/obstore-feedstock/pull/21
-  skip: true  # [py==3.14 and (aarch64 or ppc64le)]
+  skip: true  # [ppc64le]
   script:
     - {{ PYTHON }} -m pip install ./obstore -vv
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
