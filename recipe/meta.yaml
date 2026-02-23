@@ -1,4 +1,4 @@
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: obstore
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/developmentseed/obstore/archive/refs/tags/py-v{{ version }}.tar.gz
-  sha256: fd32e7931a34893b8536cdffc09acddcc03fc303a5fe419abf9b910cb267f1f1
+  sha256: 73a8e2cf235581cc2b0ed47cc355a1ffa2dade11acf915ddc51e516a8d85cdef
 
 build:
   # Build issue https://github.com/conda-forge/obstore-feedstock/pull/21
