@@ -1,4 +1,4 @@
-{% set version = "0.11.1" %}
+{% set version = "0.12.0" %}
 
 package:
   name: obstore
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/developmentseed/obstore/archive/refs/tags/py-v{{ version }}.tar.gz
-  sha256: fa1d90414a59f42001c4642d8af1a5869e7b1e91937dec4599c548088e8beea7
+  sha256: 71a513017c8b209a427356903801bb9b48996391c2caf1391694b63646808389
 
 build:
   # Build issue https://github.com/conda-forge/obstore-feedstock/pull/21
@@ -14,7 +14,7 @@ build:
   script:
     - {{ PYTHON }} -m pip install ./obstore -vv
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-  number: 1
+  number: 0
 
 requirements:
   build:
